@@ -6,7 +6,7 @@ As [posted](https://prisma.slack.com/archives/CA491RJH0/p1682375207446739) in th
 
 ## Using this reproduction
 
-This repo was created following the instructions on the [Prisma getting started](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres) page.
+This repo was created following the instructions on the [Prisma getting started](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres) page. Notice that there is an initial migration with a single users table with a prefixed id column. The "second" migration was run using `npx prisma migrate dev --name second` and adds a redundant default for the id column.
 
 1. Clone this repo and navigate to it
 1. `$ npm install`
